@@ -117,8 +117,6 @@ exports.author_delete_post = asyncHandler(async (req, res, next) => {
     await Author.findByIdAndDelete(req.body.authorid);
     res.redirect("/catalog/authors");
   }
-
-  res.send("NOT IMPLEMENTED: Author delete POST");
 });
 
 // Display Author update form on GET
